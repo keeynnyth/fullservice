@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación Web</title>
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">LOGO</div>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#vision">Visión</a></li>
+                <li><a href="#mision">Misión</a></li>
+            </ul>
+            <div class="menu-icon" id="menu-icon">&#9776;</div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="banner">
+            <img src="banner.jpg" alt="Banner del Servicio">
+            <div class="description">
+                <h1>Descripción del Servicio</h1>
+                <p>Ofrecemos servicios de alta calidad para satisfacer sus necesidades.</p>
+            </div>
+        </section>
+
+        <section id="servicios">
+            <h2>Servicios Adicionales</h2>
+            <div class="carousel">
+                <button class="prev">&#10094;</button>
+                <div class="carousel-inner">
+                    <div class="servicio active">
+                        <img src="servicio1.jpg" alt="Servicio 1">
+                        <p>Descripción del Servicio 1</p>
+                    </div>
+                    <div class="servicio">
+                        <img src="servicio2.jpg" alt="Servicio 2">
+                        <p>Descripción del Servicio 2</p>
+                    </div>
+                    <div class="servicio">
+                        <img src="servicio3.jpg" alt="Servicio 3">
+                        <p>Descripción del Servicio 3</p>
+                    </div>
+                    <div class="servicio">
+                        <img src="servicio4.jpg" alt="Servicio 4">
+                        <p>Descripción del Servicio 4</p>
+                    </div>
+                </div>
+                <button class="next">&#10095;</button>
+            </div>
+        </section>
+
+        <section id="planes">
+            <h2>Planes</h2>
+            <div class="plan">
+                <h3>Plan Premium</h3>
+                <ul>
+                    <li>Beneficio 1</li>
+                    <li>Beneficio 2</li>
+                    <li>Beneficio 3</li>
+                    <li>Beneficio 4</li>
+                    <li>Beneficio 5</li>
+                </ul>
+                <p>Precio: $100</p>
+            </div>
+            <div class="plan">
+                <h3>Plan Estándar</h3>
+                <ul>
+                    <li>Beneficio 1</li>
+                    <li>Beneficio 2</li>
+                    <li>Beneficio 3</li>
+                    <li>Beneficio 4</li>
+                    <li>Beneficio 5</li>
+                </ul>
+                <p>Precio: $50</p>
+            </div>
+        </section>
+
+        <section id="registro">
+            <h2>Registro</h2>
+            <button id="mostrarFormulario">Registrarse</button>
+            <form id="registroForm" style="display: none;">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="plan">Plan a contratar:</label>
+                <select id="plan" name="plan" required>
+                    <option value="standard">Estándar</option>
+                    <option value="premium">Premium</option>
+                </select>
+
+                <button type="submit">Registrarse</button>
+            </form>
+            <p id="mensaje"></p>
+        </section>
+
+        <section id="programacion">
+            <h2>Programación de Turnos</h2>
+            <button id="mostrarProgramacion">Agendar Cita</button>
+            <form id="programacionForm" style="display: none;">
+                <label for="nombreTurno">Nombre:</label>
+                <input type="text" id="nombreTurno" name="nombre" required>
+
+                <label for="apellidoTurno">Apellido:</label>
+                <input type="text" id="apellidoTurno" name="apellido" required>
+
+                <label for="direccionTurno">Dirección:</label>
+                <input type="text" id="direccionTurno" name="direccion" required>
+
+                <label for="telefonoTurno">Teléfono:</label>
+                <input type="tel" id="telefonoTurno" name="telefono" required>
+
+                <label for="emailTurno">Email:</label>
+                <input type="email" id="emailTurno" name="email" required>
+
+                <label for="dia">Día:</label>
+                <input type="date" id="dia" name="dia" required>
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" required>
+
+                <label for="lugarRecepcion">Lugar de recepción:</label>
+                <input type="text" id="lugarRecepcion" name="lugarRecepcion" required>
+
+                <label for="lugarEntrega">Lugar de entrega:</label>
+                <input type="text" id="lugarEntrega" name="lugarEntrega" required>
+
+                <label for="servicio">Servicios a realizar:</label>
+                <div id="servicio">
+                    <label><input type="checkbox" name="servicio" value="servicio1"> Servicio 1</label><br>
+                    <label><input type="checkbox" name="servicio" value="servicio2"> Servicio 2</label><br>
+                    <label><input type="checkbox" name="servicio" value="servicio3"> Servicio 3</label><br>
+                    <label><input type="checkbox" name="servicio" value="servicio4"> Servicio 4</label><br>
+                </div>
+
+                <label for="taller">Taller:</label>
+                <select id="taller" name="taller" required>
+                    <option value="nuestro">Nuestro Taller</option>
+                    <option value="asociado">Taller Asociado</option>
+                    <option value="externo">Taller Externo</option>
+                </select>
+
+                <div id="tallerAsociado" style="display: none;">
+                    <label for="tallerAsociadoSelect">Seleccione Taller Asociado:</label>
+                    <select id="tallerAsociadoSelect" name="tallerAsociado">
+                        <option value="asociado1">Taller Asociado 1</option>
+                        <option value="asociado2">Taller Asociado 2</option>
+                        <option value="asociado3">Taller Asociado 3</option>
+                        <option value="asociado4">Taller Asociado 4</option>
+                        <option value="asociado5">Taller Asociado 5</option>
+                    </select>
+                </div>
+
+                <div id="tallerExterno" style="display: none;">
+                    <label for="tallerExternoNombre">Nombre del Taller:</label>
+                    <input type="text" id="tallerExternoNombre" name="tallerExternoNombre">
+
+                    <label for="tallerExternoDireccion">Dirección del Taller:</label>
+                    <input type="text" id="tallerExternoDireccion" name="tallerExternoDireccion">
+                </div>
+
+                <button type="submit">Programar Turno</button>
+            </form>
+            <p id="mensajeTurno"></p>
+        </section>
+
+        <section id="recibo" style="display: none;">
+            <h2>Recibo del Turno</h2>
+            <div id="reciboTexto"></div>
+            <button id="confirmarTurno">Confirmar Turno y Enviar por WhatsApp</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 FULLSERVICE. Todos los derechos reservados.</p>
+    </footer>
+
+    <button id="contactoWhatsApp" onclick="irAWhatsApp()">Contactar</button>
+
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>
