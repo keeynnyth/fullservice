@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aplicación Web</title>
+    <title>Fullservice</title>
     <link rel="stylesheet" href="./assets/css/estilos.css">
+    <link rel="shortcut icon" href="./imagenes/fullservice.png" type="image/x-icon" />
 </head>
 <body>
     <header>
-        <div class="logo">LOGO</div>
+        <div class="logo">
+            <img src="./imagenes/fullservice.png" alt="Logo de Fullservice">
+        </div>
         <nav>
             <ul id="nav-links">
                 <li><a href="#nosotros">Nosotros</a></li>
@@ -21,62 +24,68 @@
 
     <main>
         <section id="banner">
-            <img src="banner.jpg" alt="Banner del Servicio">
+            <img src="./imagenes/marketing-taller.webp">
             <div class="description">
-                <h1>Descripción del Servicio</h1>
-                <p>Ofrecemos servicios de alta calidad para satisfacer sus necesidades.</p>
+                <h1>Que te ofrecemos?</h1>
+                <p>FullService es una plataforma web innovadora que ofrece suscripciones mensuales para el mantenimiento vehicular, gestionado de manera eficiente a través de nuestra aplicación. Nuestro servicio está diseñado para proporcionar conveniencia y calidad superior en el cuidado de los vehículos, ofreciendo opciones flexibles que se adaptan a las necesidades de nuestros clientes.</p>
             </div>
         </section>
-
+        
         <section id="servicios">
             <h2>Servicios Adicionales</h2>
             <div class="carousel">
                 <button class="prev">&#10094;</button>
                 <div class="carousel-inner">
-                    <div class="servicio active">
-                        <img src="servicio1.jpg" alt="Servicio 1">
+                    <div class="servicio">
+                        <img src="./imagenes/aceite.png" alt="Servicio 1">
                         <p>Descripción del Servicio 1</p>
                     </div>
                     <div class="servicio">
-                        <img src="servicio2.jpg" alt="Servicio 2">
+                        <img src="./imagenes/lavado.jpg" alt="Servicio 2">
                         <p>Descripción del Servicio 2</p>
                     </div>
                     <div class="servicio">
-                        <img src="servicio3.jpg" alt="Servicio 3">
+                        <img src="./imagenes/Alineacion_Balanceo_big.jpg" alt="Servicio 3">
                         <p>Descripción del Servicio 3</p>
                     </div>
                     <div class="servicio">
-                        <img src="servicio4.jpg" alt="Servicio 4">
+                        <img src="./imagenes/chasis.jpg" alt="Servicio 4">
                         <p>Descripción del Servicio 4</p>
+                    </div>
+                    <div class="servicio">
+                        <img src="./imagenes/tapiz.jpg" alt="Servicio 5">
+                        <p>Descripción del Servicio 5</p>
                     </div>
                 </div>
                 <button class="next">&#10095;</button>
-            </div>
+            </div>  
         </section>
-
+       
         <section id="planes">
             <h2>Planes</h2>
             <div class="plan">
-                <h3>Plan Premium</h3>
-                <ul>
-                    <li>Beneficio 1</li>
-                    <li>Beneficio 2</li>
-                    <li>Beneficio 3</li>
-                    <li>Beneficio 4</li>
-                    <li>Beneficio 5</li>
-                </ul>
-                <p>Precio: $100</p>
-            </div>
-            <div class="plan">
                 <h3>Plan Estándar</h3>
                 <ul>
-                    <li>Beneficio 1</li>
-                    <li>Beneficio 2</li>
-                    <li>Beneficio 3</li>
-                    <li>Beneficio 4</li>
-                    <li>Beneficio 5</li>
+                    <li>Recogida del vehículo en la ubicación del cliente (hogar, trabajo, etc.) una vez al mes.</li>
+                    <li>Entrega del vehículo en la ubicación indicada por el cliente después de completado el servicio.</li>
+                    <li>Coordinación de citas con los talleres propios de FullService o con los talleres de la red de asociados. </li>
+                    <li>Inspección visual rápida del vehículo al momento de la recogida y entrega. </li>
+                   
                 </ul>
-                <p>Precio: $50</p>
+                <p>Frecuencia: Una vez al mes.</p>
+                <p>Precio: $7000</p>
+            </div>
+            <div class="plan">
+                <h3>Plan Premium</h3>
+                <ul>
+                    <li>Todos los servicios del Plan Standard. </li>
+                    <li>Recogida del vehículo en la ubicación del cliente (hogar, trabajo, etc.) dos veces al mes. </li>
+                    <li>Prioridad en la programación de citas y recogida/entrega del vehículo.</li>
+                    <li>Informes detallados del estado del vehículo tras cada servicio.</li>
+                    <li>Posibilidad de realizar los servicios en talleres externos no asociados y de preferencia del cliente.</li>
+                </ul>
+                <p>Frecuencia: Dos veces al mes.</p>
+                <p>Precio: $13000</p>
             </div>
         </section>
 

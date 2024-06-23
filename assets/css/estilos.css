@@ -20,13 +20,21 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color:var(--gris-claro);
     color: white;
     padding: 10px 20px;
+    position: relative;
+    height: 100px;
+    box-shadow:1px 1px 8px var(--gris-oscuro);
 }
 
 header .logo {
     font-size: 1.5em;
+    position: absolute;
+    top: -160px;
+}
+header .logo img{
+    width: 420px;
 }
 
 header nav {
@@ -35,18 +43,27 @@ header nav {
 
 header nav ul {
     list-style: none;
-    margin: 0;
+    margin:1200px;
     padding: 0;
     display: flex;
 }
 
 header nav ul li {
-    margin: 0 10px;
+    margin: 0 30px;
 }
 
 header nav ul li a {
-    color: white;
+    color: var(--azul-morado);
     text-decoration: none;
+    font-size: 1.2rem;
+    transition: ease-in-out 700ms;
+}
+header nav ul li a:hover{
+    color: var(--celete);
+    background-color: var(--gris-oscuro);
+    border-radius: 5px;
+    padding: 5px;
+
 }
 
 header nav .menu-icon {
@@ -63,28 +80,50 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 40px;
+    box-shadow: 4px 4px 6px var(--gris-oscuro);
+    background-color: var(--gris-claro);
+    
 }
 
 #banner img {
     max-width: 100%;
     height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px 10px 10px 10px;
+    box-shadow: 4px 4px 6px var(--gris-oscuro);
+    width: 40%;
+    margin-left: -200px;
 }
 
 #banner .description {
     text-align: center;
     margin-top: 20px;
+    width: 40%;
+    line-height: 2rem;
+    text-align: justify;
+    background-color: var(--azul-morado);
+    color: var(--gris-claro);
+    padding: 20px;
 }
 
 #servicios {
     margin-top: 40px;
     text-align: center;
+    box-shadow: 4px 4px 6px var(--gris-oscuro);
+    background-color: var(--gris-claro);
+   
 }
 
 .carousel {
     position: relative;
-    max-width: 100%;
+    max-width: 90%;
     margin: auto;
+    overflow: hidden;
 }
 
 .carousel-inner {
@@ -93,13 +132,27 @@ main {
 }
 
 .servicio {
+    display: flex;
+    flex-wrap: wrap;
     min-width: 100%;
     box-sizing: border-box;
+    align-items: center;
+    gap: 10px;
 }
 
 .servicio img {
-    width: 100%;
+    width: 45%;
     height: auto;
+    margin-left: 50px;
+}
+
+.servicio p {
+    width: 45%;
+    margin-right: 0px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: var(--azul-morado);
+    color: var(--gris-claro);
 }
 
 button.prev, button.next {
@@ -121,10 +174,25 @@ button.next {
     right: 0;
 }
 
+@media (max-width: 768px) {
+    .servicio {
+        flex-direction: column;
+    }
+
+    .servicio img, .servicio p {
+        width: 100%;
+    }
+
+    .servicio p {
+        padding: 10px;
+    }
+}
 #planes {
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
+    box-shadow: 4px 4px 6px var(--gris-oscuro);
+    background-color: var(--gris-claro);
 }
 
 #planes .plan {
@@ -188,6 +256,39 @@ button.next {
     cursor: pointer;
 }
 
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color:var(--azul-morado);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+#contactoWhatsApp {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
 /* Responsive design */
 @media (max-width: 768px) {
     header nav ul {
@@ -221,35 +322,6 @@ button.next {
 /* Actualizar el archivo styles.css */
 
 /* Asegurarse de que el footer esté al final del contenido */
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-main {
-    flex: 1;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-#contactoWhatsApp {
-    position: fixed;
-    bottom: 50px;
-    right: 20px;
-    background-color: #25D366;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 16px;
-}
 
 
 

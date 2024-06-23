@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentSlide = 0;
     const slides = document.querySelectorAll('.carousel-inner .servicio');
     const totalSlides = slides.length;
+    console.log(totalSlides);
 
     function showSlide(index) {
         slides.forEach((slide, i) => {
@@ -20,6 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     showSlide(currentSlide);
+
+});
 
     document.getElementById('mostrarFormulario').addEventListener('click', () => {
         const form = document.getElementById('registroForm');
@@ -85,8 +88,8 @@ document.addEventListener('DOMContentLoaded', () => {
             Email: ${turno.email}<br>
             Día: ${turno.dia}<br>
             Hora: ${turno.hora}<br>
-            Lugar de Recepción: ${turno.lugarRecepcion}<br>
-            Lugar de Entrega: ${turno.lugarEntrega}<br>
+            Lugar de Recepción del vehiculo: ${turno.lugarRecepcion}<br>
+            Lugar de Entrega del vehiculo: ${turno.lugarEntrega}<br>
             Servicio(s): ${turno.servicio}<br>
             Taller: ${turno.taller}<br>
             ${turno.taller === 'asociado' ? `Taller Asociado: ${turno.tallerAsociado}<br>` : ''}
@@ -102,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.getElementById('confirmarTurno').addEventListener('click', () => {
-        const telefonoEmpresa = "5491126079467"; // Reemplazar con el número de WhatsApp de la empresa
+        const telefonoEmpresa = "5491168889467"; // Reemplazar con el número de WhatsApp de la empresa
         const reciboTexto = document.getElementById('reciboTexto').innerText;
         const mensaje = encodeURIComponent(reciboTexto);
         const url = `https://wa.me/${telefonoEmpresa}?text=${mensaje}`;
@@ -119,10 +122,10 @@ document.addEventListener('DOMContentLoaded', () => {
             navLinks.style.display = 'flex';
         }
     });
-});
+
 
 function irAWhatsApp() {
-    const telefonoEmpresa = "5491126079467"; // Reemplazar con el número de WhatsApp de la empresa
+    const telefonoEmpresa = "5491168889467"; // Reemplazar con el número de WhatsApp de la empresa
     const url = `https://wa.me/${telefonoEmpresa}`;
     window.open(url, '_blank');
 }
