@@ -14,6 +14,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden
 }
 
 header {
@@ -28,13 +32,14 @@ header {
     box-shadow:1px 1px 8px var(--gris-oscuro);
 }
 
-header .logo {
+/*header .logo {
     font-size: 1.5em;
     position: absolute;
     top: -160px;
-}
+}*/
 header .logo img{
-    width: 420px;
+    width: 400px;
+    margin-top: -20px;
 }
 
 header nav {
@@ -43,7 +48,7 @@ header nav {
 
 header nav ul {
     list-style: none;
-    margin:1200px;
+    margin:200px;
     padding: 0;
     display: flex;
 }
@@ -59,8 +64,8 @@ header nav ul li a {
     transition: ease-in-out 700ms;
 }
 header nav ul li a:hover{
-    color: var(--celete);
-    background-color: var(--gris-oscuro);
+    color: var(--gris-claro);
+    background-color: var(--azul-oscuro);
     border-radius: 5px;
     padding: 5px;
 
@@ -72,6 +77,19 @@ header nav .menu-icon {
     font-size: 1.5em;
 }
 
+.container {
+    width: 50%; /* Establece un ancho del 50% del contenedor padre */
+    margin: 0 auto; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* Centra el contenedor horizontalmente */
+    font-weight: bolder;
+    font-size: 2rem;
+    color: var(--azul-oscuro);
+    padding-top: 20px;
+    max-width: 100%;
+    
+}
+
 main {
     padding: 20px;
 }
@@ -81,10 +99,13 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 40px;
+    gap: 80px;
     margin-top: 40px;
     box-shadow: 4px 4px 6px var(--gris-oscuro);
     background-color: var(--gris-claro);
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 15px;
     
 }
 
@@ -98,6 +119,8 @@ main {
     box-shadow: 4px 4px 6px var(--gris-oscuro);
     width: 40%;
     margin-left: -200px;
+    border-radius: 8px;
+    
 }
 
 #banner .description {
@@ -109,6 +132,7 @@ main {
     background-color: var(--azul-morado);
     color: var(--gris-claro);
     padding: 20px;
+    border-radius: 8px;
 }
 
 #servicios {
@@ -116,6 +140,10 @@ main {
     text-align: center;
     box-shadow: 4px 4px 6px var(--gris-oscuro);
     background-color: var(--gris-claro);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
    
 }
 
@@ -133,7 +161,7 @@ main {
 
 .servicio {
     display: flex;
-    flex-wrap: wrap;
+   flex-direction: column;
     min-width: 100%;
     box-sizing: border-box;
     align-items: center;
@@ -141,9 +169,11 @@ main {
 }
 
 .servicio img {
-    width: 45%;
+    width: 75%;
     height: auto;
-    margin-left: 50px;
+  
+    max-width: 100%;
+    border-radius: 8px;
 }
 
 .servicio p {
@@ -187,50 +217,209 @@ button.next {
         padding: 10px;
     }
 }
+
+.container1{
+    margin:auto ;
+    background-color: #FFFFFF;
+    width: 800px;
+    padding: 30px;
+    height: 500px;
+    border-radius: 8px;
+}
+
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.slider{
+    position: relative;
+    width: 800px;
+    height: 450px;
+}
+
+ul.slider li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-color: #FFFFFF;
+    transition: opacity .5s;
+}
+
+ul.slider li img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+ li p{
+    margin-right: -500px;
+    color: var(--azul-morado);
+    font-weight: bolder;
+    margin-top: 0;
+}
+
+ul.slider li:first-child{
+    opacity: 1;
+}
+
+ul.slider li:target{
+    opacity: 1;
+}
+
+.menu{
+    text-align: center;
+    margin: 20px;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a{
+    display: inline-block;
+    color: var(--gris-claro);
+    text-decoration: none;
+    background-color: var(--azul-oscuro);
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
 #planes {
     display: flex;
-    justify-content: space-around;
+    
     margin-top: 40px;
+    width: 97%;
+    background-color: var(--gris-claro);
+    gap: 20px;
+    padding: 25px;
     box-shadow: 4px 4px 6px var(--gris-oscuro);
     background-color: var(--gris-claro);
+    border-radius: 15px;
+   
+
+    
+}
+.planes-titulo{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  text-align: center ;
+  color: var(--azul-oscuro)
+ 
+
 }
 
 #planes .plan {
-    text-align: center;
+    text-align: left;
     border: 1px solid #ccc;
     padding: 20px;
-    flex: 1;
-    margin: 0 10px;
+   width: calc(33.33% - 20px);
+    line-height: 1.8rem;
+    background-color: var(--azul-morado);
+    color: var(--gris-claro);
+    height: auto;
+    margin: auto;
+    border-radius: 8px;
+}
+
+#planes .plan span{
+    font-size: 1.5rem;
+    color:white;
+    font-weight: bolder;
+   
+}
+
+#planes .plan ul{
+    
+    padding: 8px;
+    width: 90%;
 }
 
 #registro, #programacion {
     margin-top: 40px;
     text-align: center;
+    color: var(--azul-oscuro);
+    
 }
+#mostrarFormulario,#mostrarProgramacion {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--gris-claro);
+    text-decoration: none;
+    border: none;
+    background-color: var(--azul-morado);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+    transition-property: background-color, color;
+
+}
+#mostrarProgramacion{
+    background-color: var(--azul-morado);
+}
+#mostrarProgramacion,#mostrarFormulario:hover{
+    background-color: var(--azul-oscuro);
+    color: white;
+
+}
+
+
+
+
 
 #registro form, #programacion form {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+   margin: 20px auto;
+    justify-content: center;
+    max-width: 880px;
     margin: auto;
+    line-height: 4;
+}
+#programacion form{
+ line-height: 3;
+   
 }
 
 #registro form label, #programacion form label {
     margin-top: 10px;
+    color: var(--gris-claro);
+    background-color: var(--azul-morado);
+    padding: 5px;
+    border-radius: 5px;
 }
 
 #registro form input, #programacion form input, #registro form select, #programacion form select {
     padding: 10px;
     margin-top: 5px;
+    color: var(--azul-oscuro);
+    border: var(--azul-oscuro) solid 0.5px;
+    background-color: var(--gris-claro);
 }
 
 #registro form button, #programacion form button {
     margin-top: 20px;
     padding: 10px;
-    background-color: #333;
-    color: white;
+    background-color:var(--gris-oscuro);
+    color: var(--gris-claro);
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 #recibo {
@@ -256,12 +445,6 @@ button.next {
     cursor: pointer;
 }
 
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
 
 main {
     flex: 1;
