@@ -483,6 +483,7 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: auto;
+    width: 100%;
 }
 
 #contactoWhatsApp {
@@ -600,8 +601,24 @@ footer {
         margin-left: -990px;
         margin-top: 0;
     }
+
+    #contactoWhatsApp {
+        position: fixed;
+        bottom: 50px;
+        right: 960px;
+        background-color: #25D366;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 10px;
+        display: none;
+      
+    }
     body{
       overflow-x: hidden;
+      box-sizing: border-box;
     }
 }
 /* Resto de los estilos ... */
