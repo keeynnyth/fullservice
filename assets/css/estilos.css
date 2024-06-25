@@ -78,7 +78,7 @@ header nav .menu-icon {
 }
 
 .container {
-    width: 50%; /* Establece un ancho del 50% del contenedor padre */
+    width: 80%; /* Establece un ancho del 50% del contenedor padre */
     margin: 0 auto; 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     /* Centra el contenedor horizontalmente */
@@ -86,8 +86,51 @@ header nav .menu-icon {
     font-size: 2rem;
     color: var(--azul-oscuro);
     padding-top: 20px;
-    max-width: 100%;
+    margin-left: 20rem;
+    max-width: 75%;
+   
     
+    
+    
+}
+.container p{
+    box-shadow:1px 1px 8px var(--gris-oscuro);
+    width: 70%;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: var(--gris-claro);
+   
+}
+
+.container-hacemos p{
+    box-shadow:1px 1px 8px var(--gris-oscuro);
+    width: 30%;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: var(--gris-claro);
+    color: var(--azul-oscuro);
+    margin: 0 auto; 
+    margin-top: 65px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* Centra el contenedor horizontalmente */
+    font-weight: bolder;
+    font-size: 2rem;
+   
+}
+
+.container-hacemos-planes p{
+    box-shadow:1px 1px 8px var(--gris-oscuro);
+    width: 7%;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: var(--gris-claro);
+    color: var(--azul-oscuro);
+    margin: 0 auto; 
+    margin-top: 65px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* Centra el contenedor horizontalmente */
+    font-weight: bolder;
+    font-size: 2rem;
 }
 
 main {
@@ -118,8 +161,8 @@ main {
     margin: 10px 10px 10px 10px;
     box-shadow: 4px 4px 6px var(--gris-oscuro);
     width: 40%;
-    margin-left: -200px;
-    border-radius: 8px;
+    
+   
     
 }
 
@@ -133,6 +176,7 @@ main {
     color: var(--gris-claro);
     padding: 20px;
     border-radius: 8px;
+    height: auto;
 }
 
 #servicios {
@@ -146,6 +190,7 @@ main {
     height: 600px;
    
 }
+/*
 
 .carousel {
     position: relative;
@@ -158,6 +203,7 @@ main {
     display: flex;
     transition: transform 0.5s ease;
 }
+*/
 
 .servicio {
     display: flex;
@@ -184,7 +230,7 @@ main {
     background-color: var(--azul-morado);
     color: var(--gris-claro);
 }
-
+/*
 button.prev, button.next {
     position: absolute;
     top: 50%;
@@ -203,6 +249,7 @@ button.prev {
 button.next {
     right: 0;
 }
+*/
 
 @media (max-width: 768px) {
     .servicio {
@@ -378,8 +425,37 @@ ul.slider li:target{
     margin-top: 40px;
     text-align: center;
     color: var(--azul-oscuro);
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 40px;
+    width: 97%;
+    background-color: var(--gris-claro);
+    gap: 20px;
+    padding: 25px;
+    box-shadow: 4px 4px 6px var(--gris-oscuro);
+    background-color: var(--gris-claro);
+    border-radius: 15px;
     
 }
+
+#servicio label{
+    font-size: 1.5rem;
+    font-weight: bold;
+   margin-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+
+   margin-right: 10px;
+   
+
+   width: 350px;
+   padding: 5px;
+
+   
+}
+
+
 #mostrarFormulario,#mostrarProgramacion {
     cursor: pointer;
     font-size: 18px;
@@ -409,6 +485,7 @@ ul.slider li:target{
 
 
 
+
 #registro form, #programacion form {
     display: flex;
     flex-direction: column;
@@ -419,16 +496,20 @@ ul.slider li:target{
     line-height: 4;
 }
 #programacion form{
- line-height: 3;
+ line-height: 1;
    
 }
 
 #registro form label, #programacion form label {
     margin-top: 10px;
     color: var(--gris-claro);
-    background-color: var(--azul-morado);
+   
     padding: 5px;
     border-radius: 5px;
+    color: var(--azul-oscuro);
+    display:inline-flex;
+
+
 }
 
 #registro form input, #programacion form input, #registro form select, #programacion form select {
@@ -442,7 +523,7 @@ ul.slider li:target{
 #registro form button, #programacion form button {
     margin-top: 20px;
     padding: 10px;
-    background-color:var(--gris-oscuro);
+    background-color:var(--azul-oscuro);
     color: var(--gris-claro);
     border: none;
     cursor: pointer;
@@ -461,15 +542,19 @@ ul.slider li:target{
     text-align: left;
     max-width: 600px;
     margin: auto;
+    background-color:var(--azul-morado);
+    color: var(--gris-claro);
+    border-radius: 8px;
 }
 
 #recibo button {
     margin-top: 20px;
     padding: 10px;
-    background-color: #333;
-    color: white;
+    background-color: #25D366;
+    color: var(--gris-claro);
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 

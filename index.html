@@ -22,20 +22,20 @@
         </nav>
     </header>
     <div class="container">
-        <p>Tu auto es buenas manos, tu tiempo en mejores...</p>
+        <p>Tu auto en buenas manos, tu tiempo en mejores...</p>
     </div>
       
     <main>
         <section id="banner">
             <img src="./imagenes/marketing-taller.webp">
-            <h1 class="container contenido">Que te ofrecemos?</h1>
+        
             <div class="description">
                 
                 <p>Bienvenidos a FULLSERVICE, una empresa innovadora dedicada a hacer tu vida más fácil y tu tiempo más valioso. En FULLSERVICE, entendemos la importancia de aprovechar cada momento, por lo que hemos desarrollado un servicio pensado para eliminar las molestias de las tareas de mantenimiento de tu vehículo. FullService se gestiona de manera eficiente a traves  de una plataforma web en la cual se que ofrecen distintos planes de suscripciones mensuales para el mantenimiento vehicular. Nuestro servicio está diseñado para proporcionar conveniencia y calidad superior en el cuidado de los vehículos, ofreciendo opciones flexibles que se adaptan a las necesidades de nuestros clientes.</p>
             </div>
         </section>
 
-        <div class="container">
+        <div class="container-hacemos">
             <p>¿De qué nos encargamos?</p>
         </div>
         <section id="servicios">
@@ -107,11 +107,13 @@
                 <button class="next">&#10095;</button>
             </div>  !-->
         </section>
-        <h2 class="planes-titulo">Planes</h2>
+        <div class="container-hacemos-planes">
+            <p>Planes</p>
+        </div>
         <section id="planes">
             
             <div class="plan">
-                <h3><span>Plan Estándar</span></h3>
+                <h3><span>★ Plan Estándar ★</span></h3>
                 <ul>
                     <li>Recogida del vehículo en la ubicación del cliente (hogar, trabajo, etc.) una vez al mes.</li>
                     <li>Entrega del vehículo en la ubicación indicada por el cliente después de completado el servicio.</li>
@@ -123,13 +125,13 @@
                 <p><span>Precio: $7000</span></p>
             </div>
             <div class="plan">
-                <h3><span>Plan Premium</span></h3>
+                <h3><span>★ Plan Premium ★</span></h3>
                 <ul>
-                    <li>Todos los servicios del Plan Standard. </li>
-                    <li>Recogida del vehículo en la ubicación del cliente (hogar, trabajo, etc.) dos veces al mes. </li>
-                    <li>Prioridad en la programación de citas y recogida/entrega del vehículo.</li>
-                    <li>Informes detallados del estado del vehículo tras cada servicio.</li>
-                    <li>Posibilidad de realizar los servicios en talleres externos no asociados y de preferencia del cliente.</li>
+                    <li>★ Todos los servicios del Plan Standard. </li>
+                    <li>★ Recogida del vehículo en la ubicación del cliente (hogar, trabajo, etc.) dos veces al mes. </li>
+                    <li>★ Prioridad en la programación de citas y recogida/entrega del vehículo.</li>
+                    <li>★ Informes detallados del estado del vehículo tras cada servicio.</li>
+                    <li>★ Posibilidad de realizar los servicios en talleres externos no asociados y de preferencia del cliente.</li>
                 </ul>
                 <p>Frecuencia: Dos veces al mes.</p>
                 <p><span>Precio: $13000</span></p>
@@ -161,7 +163,7 @@
                     <option value="premium">Premium</option>
                 </select>
 
-                <button class="confirmar-btn" type="submit">Registrarse</button>
+                <button class="confirmar-btn" type="submit">Confirmar registro</button>
             </form>
             <p id="mensaje"></p>
         </section>
@@ -195,7 +197,7 @@
                 <input type="text" id="lugarRecepcion" name="lugarRecepcion" required>
 
                 <label for="lugarEntrega">Lugar de entrega:</label>
-                <input type="text" id="lugarEntrega" name="lugarEntrega" required>
+                <input type="text" id="lugarEntrega" name="lugarEntrega" required><br> <br>
 
                 <label for="servicio">Servicios a realizar:</label>
                 <div id="servicio">
@@ -240,7 +242,7 @@
         <section id="recibo" style="display: none;">
             <h2>Recibo del Turno</h2>
             <div id="reciboTexto"></div>
-            <button id="confirmarTurno">Confirmar Turno y Enviar por WhatsApp</button>
+            <button id="confirmarTurno">Agendar Turno y Enviar por WhatsApp</button>
         </section>
     </main>
 
