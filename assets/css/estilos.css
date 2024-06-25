@@ -718,12 +718,14 @@ footer {
     .container-hacemos{
         padding: 20px;
         margin-bottom: 48px;
+        margin-top: 15px;
     }
 
 .container-hacemos p{
     font-size:15px ;
     width: 80%;
     margin-left: 10px;
+    margin: auto;
     
 }
 
@@ -737,7 +739,7 @@ footer {
     font-size:1rem ;
     width: 80%;
     margin: auto;
-    margin-left: 100px;
+    margin-left: 110px;
     margin-top: 50px;
     color: var(--azul-oscuro);
 }
