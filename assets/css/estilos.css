@@ -571,6 +571,7 @@ ul.slider li:target{
 #recibo {
     margin-top: 40px;
     text-align: center;
+    color: var(--azul-oscuro);
 }
 
 #reciboTexto {
@@ -624,23 +625,39 @@ footer {
 
 /* Responsive design */
 @media (max-width: 768px) {
+
+ 
     header nav ul {
         display: none;
         flex-direction: column;
-        background-color: #333;
+   
         position: absolute;
-        top: 60px;
-        right: 20px;
+        top: -130px;
+        right: -200px;
+        border-radius: 20px;
+     z-index: 5;
+     box-shadow: 4px 4px 6px var(--gris-oscuro);
+    
+     background-color: var(--azul-morado);
+     text-align: center;
+     justify-content: center;
+     transition: 0.5s ease-in-out;
+    
+        
     }
 
     header nav ul li {
         margin: 10px 0;
+        color: var(--gris-claro);
+       
+       
     }
 
     header nav .menu-icon {
         display: block;
         color: var(--azul-morado);
         margin-right: 30px;
+        
     }
 
     header{
@@ -648,24 +665,40 @@ footer {
         width: 90%;
     }
 
+    #nav-links li a{
+        color: var(--gris-claro);
+        padding: 7px;
+        margin: auto;
+        transition: max-height 0.5s ease-in-out;
+       
+    }
+
     #planes {
         max-width: 100%;
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin-top: 200px;
+        margin-top: 20px;
         margin-left: -25px;
+        box-shadow: none;
+        background-color: transparent;
+    
        
         
     }
 
-    #planes .plan {
-        margin: 10px 0;
+    #planes .plan  {
+        margin: 0px 0;
         max-width: 100%;
         width: 100%;
-        margin-top: 100px;
+        margin-top: 0px;
         margin-left: -20px;
+        
+        
        
+    }
+    #planes .plan.plan:first-child{
+        margin-bottom: 20px;
     }
 
     .container{
@@ -691,18 +724,22 @@ footer {
     font-size:15px ;
     width: 80%;
     margin-left: 10px;
+    
 }
 
 .container-hacemos-planes{
     font-size:1rem ;
     width: 20%;
+    
 }
 
 .container-hacemos-planes p{
     font-size:1rem ;
     width: 80%;
     margin: auto;
-    margin-left: 120px;
+    margin-left: 100px;
+    margin-top: 50px;
+    color: var(--azul-oscuro);
 }
 
 #banner{
@@ -743,7 +780,7 @@ margin-left: -25px;
         max-width: 100%;
         padding: 5px;
         font-size: 1rem;
-        width: 90%;
+        width: 100%;
         
         height: 70px;
         margin-top: 15px;
@@ -783,7 +820,7 @@ margin-left: -25px;
         max-width: 100%;
         padding: 5px;
         font-size: 1rem;
-        width: 90%;
+        width: 100%;
         
         height: 70px;
         margin-top: 15px;
@@ -793,7 +830,7 @@ margin-left: -25px;
 
     #contactoWhatsApp {
         position: fixed;
-        bottom: 50px;
+        bottom: 130px;
        right:20px;
         background-color: #25D366;
         color: white;
@@ -806,10 +843,7 @@ margin-left: -25px;
       
     }
 
-    #servicios{
-        display: none;
-    }
-
+ 
     #servicio label{
         font-size: 1.2rem;
         font-weight: bold;
@@ -835,8 +869,60 @@ margin-left: -25px;
         font-size: 10px;
        }
 
-   
-}
+       .container1{
+        display: none;
+       }
+
+       .container-gestiones{
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+    
+        margin-bottom: 0px;
+        height: auto;
+      
+
+       }
+       .gestion{
+        display: flex;
+        max-width: 100%;
+        width: 100%;
+        flex-direction: column;
+        background-color: var(--azul-oscuro);
+        margin-bottom: 20px;
+       }
+
+       .gestion img{
+        max-width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 9px;
+
+       }
+       .gestion p{
+        font-size: 10px;
+        color: var(--gris-claro);
+       }
+
+       #servicios{
+        margin-bottom: 10px;
+        height: fit-content;
+       }
+        #registro{
+            margin-top: 10px;
+
+        }
+
+        #programacion{
+            margin-bottom: 20px;
+        }
+       
+       }
+
+    
+
 /* Resto de los estilos ... */
 
 /* Estilos para el botón de contacto */
