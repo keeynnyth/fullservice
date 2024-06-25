@@ -10,6 +10,7 @@
 
 }
 body {
+   
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -290,6 +291,7 @@ button.next {
         margin: auto;
         max-width: 100%;
         padding: 5px;
+        border-radius: 5px;
         
     }
 }
@@ -657,8 +659,40 @@ footer {
 
     .container{
         padding: 20px;
-        font-size: 1.2rem;
+     
+        margin-bottom: 18px;
     }
+
+    .container p{
+        margin-left: -240px;
+        font-size:  1rem;
+        width: 80%;
+     
+    }
+
+    .container-hacemos{
+        padding: 20px;
+        margin-bottom: 48px;
+    }
+
+.container-hacemos p{
+    font-size:1rem ;
+    width: 80%;
+    margin-left: 40px;
+}
+
+.container-hacemos-planes{
+    font-size:1rem ;
+    width: 20%;
+}
+
+.container-hacemos-planes p{
+    font-size:1rem ;
+    width: 80%;
+    margin: auto;
+    margin-left: 120px;
+}
+
 
    
 
@@ -686,17 +720,19 @@ footer {
         max-width: 100%;
         width: 100%;
         padding: 0;
-        height: 100px;
+        height: 500px;
         
     }
 
     #servicios .container1{
+        max-width: 100%;
         padding: 5px;
         font-size: 1rem;
         width: 90%;
-        max-width: 100%;
+        
         height: 70px;
-        margin-top: -80px;
+        margin-top: 15px;
+        margin-left: 200px;
 
     }
 
@@ -717,10 +753,33 @@ footer {
         margin-top: 0;
     }
 
+    #servicios .container1 .slider{
+        width: 100%;
+        margin: 0 auto;
+        margin-left: -100px;
+        max-width: 100%;
+    }
+
+    #servicios .container1 .slider img{
+        width: 100%;
+    }
+
+    #servicios .container1{
+        max-width: 100%;
+        padding: 5px;
+        font-size: 1rem;
+        width: 90%;
+        
+        height: 70px;
+        margin-top: 15px;
+        margin-left: 200px;
+
+    }
+
     #contactoWhatsApp {
         position: fixed;
         bottom: 50px;
-        right: 960px;
+       right: 250px;
         background-color: #25D366;
         color: white;
         border: none;
@@ -735,6 +794,11 @@ footer {
       overflow-x: hidden;
       box-sizing: border-box;
     }
+    #servicios{
+        display: none;
+    }
+
+   
 }
 /* Resto de los estilos ... */
 
