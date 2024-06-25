@@ -1,3 +1,7 @@
+*{
+    border: red solid 2px;
+}
+
 :root{
 
 --azul-oscuro: #0606A2;
@@ -10,7 +14,7 @@
 
 }
 body {
-   
+   width: 100%;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -87,7 +91,7 @@ header nav .menu-icon {
     font-size: 2rem;
     color: var(--azul-oscuro);
     padding-top: 20px;
-    margin-left: 20rem;
+ 
     max-width: 75%;
    
     
@@ -100,6 +104,8 @@ header nav .menu-icon {
     padding: 15px;
     border-radius: 25px;
     background-color: var(--gris-claro);
+    margin: 20px auto;
+    margin-left: 220px;
    
 }
 
@@ -459,8 +465,6 @@ ul.slider li:target{
     color: var(--azul-oscuro);
     display: flex;
     flex-direction: column;
-    
-    margin-top: 40px;
     width: 97%;
     background-color: var(--gris-claro);
     gap: 20px;
@@ -468,6 +472,7 @@ ul.slider li:target{
     box-shadow: 4px 4px 6px var(--gris-oscuro);
     background-color: var(--gris-claro);
     border-radius: 15px;
+    margin-left: -25px;
     
 }
 
@@ -481,8 +486,9 @@ ul.slider li:target{
    margin-right: 10px;
    
 
-   width: 350px;
+   width: 100%;
    padding: 5px;
+   max-width: 100%;
 
    
 }
@@ -502,6 +508,7 @@ ul.slider li:target{
     transition: ease-in-out;
     transition-duration: 0.5s;
     transition-property: background-color, color;
+    max-width: 100%;
 
 }
 #mostrarProgramacion{
@@ -526,6 +533,7 @@ ul.slider li:target{
     max-width: 880px;
     margin: auto;
     line-height: 4;
+    max-width: 100%;
 }
 #programacion form{
  line-height: 1;
@@ -590,10 +598,6 @@ ul.slider li:target{
 }
 
 
-main {
-    flex: 1;
-}
-
 footer {
     background-color:var(--azul-morado);
     color: white;
@@ -601,6 +605,9 @@ footer {
     padding: 10px 0;
     margin-top: auto;
     width: 100%;
+
+   
+
 }
 
 #contactoWhatsApp {
@@ -638,12 +645,17 @@ footer {
         margin-right: 12px;
     }
 
+    header{
+        max-width: 100%;
+    }
+
     #planes {
         max-width: 100%;
         width: 100%;
         display: flex;
         flex-direction: column;
         margin-top: 200px;
+        margin-left: -25px;
        
         
     }
@@ -664,7 +676,7 @@ footer {
     }
 
     .container p{
-        margin-left: -240px;
+        margin-left: 40px;
         font-size:  1rem;
         width: 80%;
      
@@ -693,7 +705,9 @@ footer {
     margin-left: 120px;
 }
 
-
+#banner{
+margin-left: -25px;
+}
    
 
     #banner .description {
@@ -721,6 +735,7 @@ footer {
         width: 100%;
         padding: 0;
         height: 500px;
+     
         
     }
 
@@ -779,21 +794,18 @@ footer {
     #contactoWhatsApp {
         position: fixed;
         bottom: 50px;
-       right: 250px;
+       right:60px;
         background-color: #25D366;
         color: white;
         border: none;
         padding: 10px 20px;
         border-radius: 50px;
         cursor: pointer;
-        font-size: 10px;
+        font-size: 8px;
        
       
     }
-    body{
-      overflow-x: hidden;
-      box-sizing: border-box;
-    }
+
     #servicios{
         display: none;
     }
