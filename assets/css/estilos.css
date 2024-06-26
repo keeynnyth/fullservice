@@ -281,8 +281,10 @@ button.next {
     }
 
     header .logo img{
-        width: 150px;
+        width: 200px;
+       
         margin-top: -10px;
+        margin-left: -30px;
         
     }
 

@@ -85,7 +85,7 @@ header nav ul {
    flex-direction: row;
     position: absolute;
     top: -130px;
-    right: -190px;
+    right: -185px;
     border-radius: 20px;
  z-index: 5;
  box-shadow: 4px 4px 6px var(--gris-oscuro);
@@ -115,6 +115,7 @@ header .logo img{
     width: 280px;
    height: 250px;
     margin-top: -10px;
+    margin-left:30px;
     
 }
 
