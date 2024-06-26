@@ -130,3 +130,20 @@ function irAWhatsApp() {
     window.open(url, '_blank');
 }
 
+// scripts.js
+
+document.addEventListener('DOMContentLoaded', function() {
+    var menuIcon = document.getElementById('menu-icon');
+    var navLinks = document.getElementById('nav-links');
+
+    menuIcon.addEventListener('click', function() {
+        navLinks.classList.toggle('open');
+    });
+
+    // Close the menu when a link is clicked
+    navLinks.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function() {
+            navLinks.classList.remove('open');
+        });
+    });
+});
