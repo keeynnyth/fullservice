@@ -634,7 +634,6 @@ footer {
     header nav ul {
         display: none;
         flex-direction: column;
-   
         position: absolute;
         top: -130px;
         right: -200px;
