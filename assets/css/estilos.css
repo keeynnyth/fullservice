@@ -484,11 +484,12 @@ ul.slider li:target{
     font-size: 1.5rem;
     font-weight: bold;
    margin-bottom: 5px;
-  display: flex;
-  flex-wrap: wrap;
+display: flex;
+align-items: center;
 
-   margin-right: 10px;
-   
+
+   margin-right: -1150px;
+  
 
    width: 100%;
    padding: 5px;
