@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function irAWhatsApp() {
-    const telefonoEmpresa = "5491168889467"; // Reemplazar con el número de WhatsApp de la empresa
+    const telefonoEmpresa = "5491126079467"; // Reemplazar con el número de WhatsApp de la empresa
     const url = `https://wa.me/${telefonoEmpresa}`;
     window.open(url, '_blank');
 }
