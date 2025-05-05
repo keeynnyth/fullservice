@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.getElementById('confirmarTurno').addEventListener('click', () => {
-        const telefonoEmpresa = "5491168889467"; // Reemplazar con el número de WhatsApp de la empresa
+        const telefonoEmpresa = "5491126079467"; // Reemplazar con el número de WhatsApp de la empresa
         const reciboTexto = document.getElementById('reciboTexto').innerText;
         const mensaje = encodeURIComponent(reciboTexto);
         const url = `https://wa.me/${telefonoEmpresa}?text=${mensaje}`;
