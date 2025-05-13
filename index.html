@@ -277,10 +277,10 @@
       <input type="text" id="nombre" name="nombre" required />
   
       <label for="telefono">Teléfono:</label>
-      <input type="number" id="telefono" name="telefono" required />
+      <input type="tel" id="telefono" name="telefono" required />
   
       <label for="mensaje">Mensaje:</label>
-      <textarea id="mensaje" name="mensaje" maxlength="250" required> </textarea>
+      <textarea id="mensaje" name="mensaje" required> </textarea>
   
       <button type="submit">Enviar</button>
     </form>
@@ -295,6 +295,37 @@
     <button id="contactoWhatsApp" onclick="irAWhatsApp()"> <img src="./imagenes/3.png" alt="boton WhatsApp"></button>
 
     <script src="./assets/js/scripts.js"></script>
-    <script src="./assets/js/contacto.js></script>
+    <script src="./assets/js/contacto.js"></script>
+
+    <script>
+        document.getElementById('form-contacto').addEventListener('submit', async function (e) {
+          e.preventDefault();
+      
+          const nombre = document.getElementById('nombre').value;
+          const telefono = document.getElementById('telefono').value;
+          const mensaje = document.getElementById('mensaje').value;
+      
+          if (!nombre || !telefono || !mensaje) {
+            alert('Por favor completá todos los campos.');
+            return;
+          }
+      
+          try {
+            const respuesta = await fetch('http://localhost:3000/contacto', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({ nombre, telefono, mensaje }),
+            });
+      
+            const data = await respuesta.json();
+            alert(data.mensaje || 'Mensaje enviado');
+          } catch (error) {
+            console.error('Error al enviar el formulario:', error);
+            alert('Hubo un error al enviar el formulario. Por favor, intentá nuevamente.');
+          }
+        });
+      </script>
 </body>
 </html>
